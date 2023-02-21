@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <section class="sliders">
+            <div class="sliders__container">
+                <div class="sliders__count">
+                    <h3 class="sliders__text">Storage:</h3>
+                    <input type="number" id="input-storage" max="1000" value="500" class="sliders__inp"  >
+                </div>
+                <div class="sliders__box">
+                    <span>0</span><input type="range" id="range-storage" value="500"  max="1000" step="10" class="sliders__slider_storage"><span>1000</span>    
+                </div>  
+            </div>
+            <div class="sliders__container">
+                <div class="sliders__count">
+                    <h3 class="sliders__text">Transfer:</h3>
+                    <input type="number" id="input-transfer" max="1000" value="500" class="sliders__inp" value="">
+                </div>
+                <div class="sliders__box">
+                    <span>0</span><input type="range" id="range-transfer" max="1000" value="500" class="sliders__slider_transfer"><span>1000</span>    
+                </div>
+            </div>
+        </section>
+        <section class="presentation">
+            <div class="presentation__column">
+                <div class="presentation__brand">backblaze</div>
+                <img src="/img/red.png" alt="backblaze-logo" class="presentation__icon">
+                <div class="presentation__show">
+                    <div class="presentation__space" id="space-backblaze"></div>
+                    <p class="presentation__count" id="count-backblaze">0$</p>
+                </div>
+            </div>
+            <div class="presentation__column">
+                <div class="presentation__brand">bunny
+                    <div class="presentation__radio" id="bunny-choice">
+                        <input type="radio" name="bunny" value="0.01" checked id="bunny-hdd" value="">
+                        <label for="bunny-hdd">HDD</label>
+                        <input type="radio" name="bunny" value="0.02" id="bunny-ssd" >
+                        <label for="bunny-ssd">SSD</label>
+                    </div>
+                </div>
+                <img src="/img/orange.png" alt="bunny-logo" class="presentation__icon">
+                <div class="presentation__show">
+                    <div class="presentation__space" id="space-bunny"></div>
+                    <p class="presentation__count" id="count-bunny">0$</p>
+                </div>
+            </div>
+            <div class="presentation__column">
+                <div class="presentation__brand">
+                    scaleway
+                    <div class="presentation__radio" id="scaleway-choice">
+                        <input type="radio" name="scaleway" value="0.06" checked id="scaleway-multi">
+                        <label for="scaleway-multi">Multi</label>
+                        <input type="radio" name="scaleway" value="0.03" id="scaleway-single">
+                        <label for="scaleway-single">Single</label>
+                    </div>
+                </div>
+                <img src="/img/purpur.png" alt="scaleway-logo" class="presentation__icon">
+                <div class="presentation__show">
+                    <div class="presentation__space" id="space-scaleway"></div>
+                    <p class="presentation__count" id="count-scaleway">0$</p>
+                </div>
+            </div>
+            <div class="presentation__column">
+                <div class="presentation__brand">vultr</div>
+                <img src="/img/blue.png " alt="vultr-logo" class="presentation__icon">
+                <div class="presentation__show">
+                    <div class="presentation__space" id="space-vultr"></div>
+                    <p class="presentation__count" id="count-vultr">0$</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

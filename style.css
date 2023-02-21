@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+}
+
+h3, p {
+  margin: 0;
+}
+
+.app {
+  width: 500px;
+  margin: 10vh auto;
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 769px) {
+  .app {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 769px) {
+  .app {
+    height: 500px;
+  }
+}
+
+.sliders {
+  flex-grow: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 1px gray dashed;
+}
+@media (max-width: 769px) {
+  .sliders {
+    border-bottom: none;
+  }
+}
+.sliders__container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.sliders__count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sliders__inp {
+  width: 50px;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.048);
+  border-radius: 6px;
+}
+.sliders__box {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+.presentation {
+  padding: 10px;
+}
+@media (max-width: 769px) {
+  .presentation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    border-bottom: 1px gray dashed;
+  }
+}
+.presentation__column {
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+}
+@media (max-width: 769px) {
+  .presentation__column {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 0px;
+  }
+}
+.presentation__brand {
+  font-size: 20px;
+  width: 100px;
+  text-align: start;
+}
+@media (max-width: 769px) {
+  .presentation__brand {
+    text-align: center;
+    width: 80px;
+    height: 50px;
+  }
+}
+.presentation__icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+}
+.presentation__show {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+@media (max-width: 769px) {
+  .presentation__show {
+    flex-direction: column-reverse;
+    height: 100%;
+    flex-wrap: wrap;
+    height: 300px;
+    align-items: center;
+  }
+}
+.presentation__space {
+  transition: width 0.4s ease-in-out;
+  height: 100%;
+}
+@media (max-width: 769px) {
+  .presentation__space {
+    transition: height 0.4s ease-in-out;
+    width: 20px;
+    height: 0;
+  }
+}
+.presentation__count {
+  padding: 5px;
+}
+.presentation__radio {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+.presentation__radio input {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
